@@ -2,3 +2,12 @@ div {
     text-align: center;
     background-color: brown;
 }
+
+.page {
+    height: 100vh;
+}
+
+img {
+    width: 95%;
+    height: auto;
+}
