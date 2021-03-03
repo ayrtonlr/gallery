@@ -59,7 +59,7 @@ body {
 }
 
 
-#section04 a span {
+/* #section04 a span {
   position: absolute;
   top: 0;
   left: 50%;
@@ -95,17 +95,4 @@ body {
   40% {
     transform: rotate(-45deg) translate(0, 0);
   }
-}
-
-/* PAGE TWO */
-
-.column1 {  
-  flex: 50%;
-  background-color: #2b9f5e;
-}
-
-.column2 { 
-  flex: 50%;
-  background-color: #bb36bb;
-  padding: 50px;
-}
+} */
