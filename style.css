@@ -1,13 +1,287 @@
-div {
-    text-align: center;
-    background-color: brown;
-}
-
 .page {
     height: 100vh;
+}
+
+.mid-page {
+    height: 50vh;
 }
 
 img {
     width: 100%;
     height: auto;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+/* @import url('https://fonts.googleapis.com/css?family=Fjalla+One'); */
+
+:root {
+	 font-family: 'Roboto', sans-serif;
+	 --color1: #e41936;
+	 --color2: #e7e31d;
+	 --color3: #3bb7ce;
+}
+:root * {
+	 outline: none;
+}
+html, body, main {
+	 width: 100%;
+	 height: 100%;
+	 margin: 0;
+	 background-color: #f2f2f2;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.vintalight-body {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	/*overflow-x: hidden;*/
+}
+
+
+.vinta__container {
+	background-color: #fff;
+	padding: 10px;
+	box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.5);
+	transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.5s,
+		margin 0.5s;
+}
+
+.vintalight {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 100%,
+	width: 90%;
+	max-width: 1200px;
+	padding: 50px 0;
+}
+.vintalight__container {
+	position: relative;
+	width: 90%;
+	max-width: 10.5em;
+	height: 12.25em;
+	background-color: #fff;
+	font-size: 30px;
+	box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.5);
+	transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.5s,
+		margin 0.5s;
+}
+@media screen and (max-width: 500px) {
+	.vintalight__container {
+		max-width: 7.35em;
+		height: 8.575em;
+	}
+}
+.vintalight__container:nth-child(1) {
+	transform: translate(40px, 30px) rotate(-30deg);
+	z-index: 40;
+}
+.vintalight__container:nth-child(1):hover {
+	transform: scale(1.15) translate(40px, 30px) rotate(0);
+}
+@media screen and (max-width: 700px) {
+	.vintalight__container:nth-child(1) {
+		transform: translate(0) rotate(-30deg);
+	}
+	.vintalight__container:nth-child(1):hover {
+		transform: scale(1.1) translate(0) rotate(0);
+	}
+}
+.vintalight__container:nth-child(2) {
+	transform: translate(30px, 20px) rotate(7deg);
+	z-index: 50;
+}
+.vintalight__container:nth-child(2):hover {
+	transform: scale(1.15) translate(30px, 20px) rotate(0);
+}
+@media screen and (max-width: 700px) {
+	.vintalight__container:nth-child(2) {
+		transform: translate(0) rotate(7deg);
+	}
+	.vintalight__container:nth-child(2):hover {
+		transform: scale(1.1) translate(0) rotate(0);
+	}
+}
+.vintalight__container:nth-child(3) {
+	transform: translate(-20px, 20px) rotate(20deg);
+	z-index: 40;
+}
+.vintalight__container:nth-child(3):hover {
+	transform: scale(1.15) translate(-20px, 20px) rotate(0);
+}
+@media screen and (max-width: 700px) {
+	.vintalight__container:nth-child(3) {
+		transform: translate(0) rotate(20deg);
+	}
+	.vintalight__container:nth-child(3):hover {
+		transform: scale(1.1) translate(0) rotate(0);
+	}
+}
+.vintalight__container:nth-child(4) {
+	transform: translate(40px, -10px) rotate(10deg);
+	z-index: 30;
+}
+.vintalight__container:nth-child(4):hover {
+	transform: scale(1.15) translate(40px, -10px) rotate(0);
+}
+@media screen and (max-width: 700px) {
+	.vintalight__container:nth-child(4) {
+		transform: translate(0) rotate(10deg);
+	}
+	.vintalight__container:nth-child(4):hover {
+		transform: scale(1.1) translate(0) rotate(0);
+	}
+}
+.vintalight__container:nth-child(5) {
+	transform: translate(30px, -20px) rotate(-20deg);
+	z-index: 20;
+}
+.vintalight__container:nth-child(5):hover {
+	transform: scale(1.15) translate(30px, -20px) rotate(0);
+}
+@media screen and (max-width: 700px) {
+	.vintalight__container:nth-child(5) {
+		transform: translate(0) rotate(-20deg);
+	}
+	.vintalight__container:nth-child(5):hover {
+		transform: scale(1.1) translate(0) rotate(0);
+	}
+}
+.vintalight__container:nth-child(6) {
+	transform: translate(30px, -40px) rotate(-10deg);
+	z-index: 40;
+}
+.vintalight__container:nth-child(6):hover {
+	transform: scale(1.15) translate(30px, -40px) rotate(0);
+}
+@media screen and (max-width: 700px) {
+	.vintalight__container:nth-child(6) {
+		transform: translate(0) rotate(-10deg);
+	}
+	.vintalight__container:nth-child(6):hover {
+		transform: scale(1.1) translate(0) rotate(0);
+	}
+}
+.vintalight__container:hover {
+	box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.4);
+	z-index: 100;
+}
+@media screen and (max-width: 700px) {
+	.vintalight__container:hover {
+		margin: 0 25px;
+	}
+}
+.vintalight__container:hover .vintalight__container__photo::before {
+	transform: scale(1);
+}
+.vintalight__container.active,
+.vintalight__container.active:hover {
+	transform: rotate(0) scale(1.25);
+}
+@media screen and (max-width: 500px) {
+	.vintalight__container.active,
+	.vintalight__container.active:hover {
+		transform: rotate(0) scale(1.15);
+	}
+}
+.vintalight__container.active {
+	position: relative;
+}
+.vintalight__container.active .vintalight__container__photo {
+	cursor: default;
+}
+.vintalight__container.active .vintalight__container__photo::before {
+	display: none;
+}
+.vintalight__container__photo {
+	position: relative;
+	width: 9.25em;
+	height: 9.25em;
+	margin: 0.625em auto 0;
+	overflow: hidden;
+	cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+	.vintalight__container__photo {
+		width: 6.475em;
+		height: 6.475em;
+		margin: 0.4375em auto 0;
+	}
+}
+/*.vintalight__container__photo::before {
+	content: 'Ver foto';
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	font-size: 1em;
+	font-family: roboto, sans-serif;
+	transform: scale(0);
+	transition: all 0.25s;
+}*/
+.vintalight__container__photo__img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.vintalight__container__caption {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 2.375em;
+}
+@media screen and (max-width: 500px) {
+	.vintalight__container__caption {
+		height: 1.6625em;
+	}
+}
+.vintalight__container__caption__text {
+	color: #222;
+	font-size: 1em;
+	font-family: nanum pen script, cursive;
+}
+.vintalight-overlay {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.75);
+	opacity: 0;
+	z-index: 10000;
+	transition: opacity 0.5s;
+}
+.vintalight-overlay.active {
+	opacity: 1;
+}
+.vintalight__button {
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	width: 30px;
+	height: 30px;
+	background-color: #f53d3d;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	outline: none;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 700;
+	box-shadow: -2px 2px 1px rgba(0, 0, 0, 0.3);
+	z-index: 10000;
+	cursor: pointer;
+}
+
